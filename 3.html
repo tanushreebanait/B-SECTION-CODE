@@ -1,0 +1,127 @@
+
+<html>
+<head>
+  <title>Seminar Registration</title>
+  
+  
+  <link rel="stylesheet" href="style.css">
+
+  
+  <link rel="icon" href="seminar-icon.png" type="image/png">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: 
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 128, 255, 0.5)),
+          url('background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 50px;
+        text-align: center;
+    
+      
+      h2 {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      
+      form {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        display: inline-block;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      }
+      
+      label {
+        font-size: 16px;
+        display: block;
+        margin-top: 15px;
+        color: black;
+      }
+      
+      label i {
+        color: green;
+        margin-right: 8px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 250px;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid cream;
+        border-radius: 8px;
+      }
+      
+      input[type="submit"] {
+        background-color: green;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: blue;
+      }
+    }   
+</style>
+      
+
+  <h2><i>Seminar Registration Form</i></h2>
+
+  <form action="#">
+    
+    
+    <label for="name"></i> Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email"></i> Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone"></i> Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="topic"></i> Preferred Topic:</label><br>
+    <input type="text" id="topic" name="topic"><br><br>
+    <label for="gender"></i> Gender:</label><br>
+    <select id="gender" name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+    <label for="dob"></i> Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="city"></i> City:</label><br>
+    <input type="text" id="city" name="city" required><br><br>
+
+    <label for="college"></i> College Name:</label><br>
+    <input type="text" id="college" name="college" required><br><br>
+
+    <label for="session"></i> Choose Session:</label><br>
+    <select id="session" name="session" required>
+      <option value="">Select Session</option>
+      <option value="Morning">Morning</option>
+      <option value="Afternoon">Afternoon</option>
+    </select><br><br>
+
+    <label for="topic"></i> Preferred Topic:</label><br>
+    <input type="text" id="topic" name="topic"><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
